@@ -166,7 +166,7 @@ public class PlayerAttack : MonoBehaviour
     {
         RaycastHit hit;
 
-        if(Physics.Raycast(mainCam.transform.position,mainCam.transform.forward * 600,out hit))
+        if(Physics.Raycast(mainCam.transform.position,mainCam.transform.forward,out hit))
         {
             if (hit.transform.tag == Tags.ENEMY_TAG)
             {

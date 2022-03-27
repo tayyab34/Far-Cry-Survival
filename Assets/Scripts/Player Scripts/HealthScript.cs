@@ -73,6 +73,7 @@ public class HealthScript : MonoBehaviour
         {
             GetComponent<Animator>().enabled = false;
             GetComponent<BoxCollider>().isTrigger = false;
+            GetComponent<Rigidbody>().isKinematic = false;
             GetComponent<Rigidbody>().AddTorque(-transform.forward * 10f);
 
             enemy_Controller.enabled = false;
@@ -127,7 +128,7 @@ public class HealthScript : MonoBehaviour
 
     void RestartGame()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
     }
 
     void TurnOffGameObject()

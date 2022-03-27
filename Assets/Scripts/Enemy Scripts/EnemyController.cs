@@ -228,8 +228,6 @@ public class EnemyController : MonoBehaviour
             enemy_State = EnemyState.CHASE;
 
         }
-
-
     } // attack
 
     void SetNewRandomDestination()
